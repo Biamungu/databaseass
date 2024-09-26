@@ -1,0 +1,204 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    width: 100%;
+    margin: auto;
+    background-color: white;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Header styling */
+header{
+    padding: 5px;
+    margin: 0;
+    background-color: rgb(10, 10, 71);
+    text-align: center;
+    border-radius: 10px;
+}
+
+header h1 a{
+    color: white;
+    font-size: 2.5rem;
+}
+header h1 a{
+    text-decoration: none;
+}
+
+/*the beginning of the nav*/
+nav{
+    background-color: darkblue;
+    border-radius: 5px;  
+}
+.nav-content{
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-content li{
+    list-style-type: none;
+    padding: 20px;
+
+}
+
+.nav-content li a{
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+    background-color: darkblue;
+    font-size: 25px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect */
+.nav-content li a:hover {
+    background-color: rgb(124, 124, 219);
+    color: rgb(10, 10, 71);
+}
+h2
+
+/* Active effect */
+.nav-content li a:active, .nav-content li a.active {
+    background-color: rgb(124, 124, 219);
+    color: rgb(10, 10, 71);
+}
+
+
+
+.contents{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.main-content {
+    display: inline-block;
+    width: 60%; /* Adjust as needed */
+    border: 1px solid gray;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    
+}
+
+.main-content img {
+    width: 200px; /* Fit within container */
+    height: 200px; /* Maintain aspect ratio */
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out; /* Smooth transform effect */
+}
+
+.main-content h1, p{
+    color: rgb(10, 10, 71);
+}
+.main-content img:hover {
+    transform: scale(1.1); /* Zoom effect on hover */
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+    overflow: hidden; /* Prevents content from showing outside the main container */
+}
+
+/* Continuous animation for h2 and p */
+main h2, main p {
+    font-size: 30px;
+    position: relative;
+    animation: slideRightLeft 10s linear infinite; /* Infinite loop with a continuous motion */
+}
+
+/* Keyframes for continuous right-left sliding animation */
+@keyframes slideRightLeft {
+    0% {
+        transform: translateX(100%); /* Start off the screen to the right */
+    }
+    50% {
+        transform: translateX(0); /* Move to the original position */
+    }
+    100% {
+        transform: translateX(-100%); /* Move off the screen to the left */
+    }
+}
+
+
+/* Form styling */
+section {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+form fieldset {
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    padding: 15px;
+}
+
+form legend {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+input[type="submit"] {
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #4cae4c;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer p {
+    color: #555;
+}
