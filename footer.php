@@ -3,46 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>index.php</title>
+    <title>Document</title>
 </head>
 <body>
-    <?php
-      require"header.php";
-    ?>
-    <main>
-       
-    <div class="contents">
-  
-    <div class="main-content">
-        <h1>Make an order</h1>
-        <a href="shoe.php"><img src="images/shoe.jpg" alt="Shoe"></a>
-    </div>
-
-    <div class="main-content">
-        <h1>Make an order</h1>
-        <a href="#"><img src="images/trausers.avif" alt="Trausers"></a>
-       
-    </div>
-    
-    <div class="main-content">
-        <h1>Make an order</h1>
-        <a href="#"><img src="images/sweater.avif" alt="Sweater"></a>
-    </div>
-
-    <div class="main-content">
-        <h1>Make an order</h1>
-        <a href="#"><img src="images/t-shirts.avif" alt="t-shirt"></a>
-    </div>
-      
-    <div class="main-content">
-        <h1>Make an order</h1>
-       <a href="#"> <img src="images/coats.avif" alt="coats"></a>
-    </div>
-
-    </div>
-     
-</main>
-
 <footer>
        <div class="footer1">
             <h3>Get support</h3>
@@ -89,15 +52,5 @@
              </ul>
              </div>
     </footer>
-
-    <footer class="footer2">
-        <img src="images/picha.png" alt="">
-        <img src="images/picha1.png" alt="">
-        <img src="images/picha2.png" alt="">
-        <img src="images/picha3.png" alt="">
-        <img src="images/picha4.png" alt="">
-    
-  </footer>
-  
 </body>
 </html>

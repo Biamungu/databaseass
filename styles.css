@@ -19,7 +19,7 @@ body {
 header{
     padding: 5px;
     margin: 0;
-    background-color: rgb(10, 10, 71);
+    background-color: darkblue;
     text-align: center;
     border-radius: 10px;
 }
@@ -30,6 +30,21 @@ header h1 a{
 }
 header h1 a{
     text-decoration: none;
+}
+
+.search-bar{
+    border: 2px solid darkcyan;
+    width: 600px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.search-button{
+    border: 2px solid darkcyan;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 10px;
 }
 
 /*the beginning of the nav*/
@@ -64,7 +79,7 @@ nav{
     background-color: rgb(124, 124, 219);
     color: rgb(10, 10, 71);
 }
-h2
+
 
 /* Active effect */
 .nav-content li a:active, .nav-content li a.active {
@@ -72,38 +87,7 @@ h2
     color: rgb(10, 10, 71);
 }
 
-
-
-.contents{
-    display: flex;
-    flex-direction: row;
-}
-
-
-.main-content {
-    display: inline-block;
-    width: 60%; /* Adjust as needed */
-    border: 1px solid gray;
-    margin: 10px;
-    padding: 10px;
-    border-radius: 5px;
-    
-}
-
-.main-content img {
-    width: 200px; /* Fit within container */
-    height: 200px; /* Maintain aspect ratio */
-    border-radius: 10px;
-    transition: transform 0.3s ease-in-out; /* Smooth transform effect */
-}
-
-.main-content h1, p{
-    color: rgb(10, 10, 71);
-}
-.main-content img:hover {
-    transform: scale(1.1); /* Zoom effect on hover */
-}
-
+/*Animation styling */
 main {
     padding: 20px;
     text-align: center;
@@ -131,6 +115,158 @@ main h2, main p {
 }
 
 
+
+
+
+.contents{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.main-content {
+    display: inline-block;
+    width: 60%; /* Adjust as needed */
+    border: 1px solid gray;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    
+}
+
+.main-content h1{
+    font-size: 20px;
+}
+.main-content img {
+    width: 200px; /* Fit within container */
+    height: 200px; /* Maintain aspect ratio */
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out; /* Smooth transform effect */
+}
+
+.main-content h1, p{
+    color: rgb(10, 10, 71);
+}
+.main-content img:hover {
+    transform: scale(1.1); /* Zoom effect on hover */
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+    overflow: hidden; /* Prevents content from showing outside the main container */
+}
+
+/* Continuous animation for h2 and p */
+main h2, main p {
+    font-size: 30px;
+    position: relative;
+    animation: slideRightLeft 10s linear infinite; /* Infinite loop with a continuous motion */
+}
+
+
+button{
+    font-size: 20px;
+    color: blue;
+}
+
+
+/*styling for the shoes*/
+
+.shoe-item{
+    display: flex;
+    flex-direction: row;
+}
+
+.shoe-content {
+    display: inline-block;
+    width: 60%; /* Adjust as needed */
+    border: 1px solid gray;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    
+}
+
+.shoe-content img {
+    width: 250px; /* Fit within container */
+    height: 250px; /* Maintain aspect ratio */
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out; /* Smooth transform effect */
+}
+
+.shoe-content h1, p{
+    color: rgb(10, 10, 71);
+}
+.shoe-content img:hover {
+    transform: scale(1.1); /* Zoom effect on hover */
+}
+
+button{
+    font-size: 20px;
+    color: blue;
+}
+
+.shoe-item2{
+    display: flex;
+    flex-direction: row;
+}
+
+.shoe-content1{
+    display: inline-block;
+    width: 60%; /* Adjust as needed */
+    border: 1px solid gray;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    
+}
+
+.shoe-content1 img {
+    width: 250px; /* Fit within container */
+    height: 250px; /* Maintain aspect ratio */
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out; /* Smooth transform effect */
+}
+
+.shoe-content1 h1, p{
+    color: rgb(10, 10, 71);
+}
+.shoe-content1 img:hover {
+    transform: scale(1.1); /* Zoom effect on hover */
+}
+
+.shoe-item3{
+    display: flex;
+    flex-direction: row;
+}
+
+.shoe-content2{
+    display: inline-block;
+    width: 60%; /* Adjust as needed */
+    border: 1px solid gray;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    
+}
+
+.shoe-content2 img {
+    width: 250px; /* Fit within container */
+    height: 250px; /* Maintain aspect ratio */
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out; /* Smooth transform effect */
+}
+
+.shoe-content2 h1, p{
+    color: rgb(10, 10, 71);
+}
+.shoe-content2 img:hover {
+    transform: scale(1.1); /* Zoom effect on hover */
+}
+
+
+
 /* Form styling */
 section {
     max-width: 600px;
@@ -145,6 +281,8 @@ h2 {
     color: #333;
     margin-bottom: 20px;
 }
+
+
 
 form fieldset {
     margin-bottom: 15px;
@@ -194,11 +332,57 @@ input[type="submit"]:hover {
 }
 
 /* Footer styling */
-footer {
-    text-align: center;
-    margin-top: 20px;
+
+
+
+footer{
+    background-color: rgb(5, 5, 39);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+   
 }
 
-footer p {
-    color: #555;
+.footer1{
+    margin-left: 40px;
 }
+
+.footer1 ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.footer1 ul li{
+    font-size: 20px;
+}
+
+.footer1 h3{
+    color: white;
+    text-decoration: 3px underline;
+
+}
+
+.footer1 ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer1 ul li a:hover{
+    background-color: rgb(169, 169, 240);
+    color: rgb(10, 10, 71);
+}
+
+
+/*The styling for the second footer1*/
+  
+.footer2{
+     margin-top: 50px;
+
+}
+.footer2 img{
+     justify-content: center;
+      margin-left: 40px;
+      }

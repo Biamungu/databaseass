@@ -10,10 +10,14 @@
 <body>
 <header>
         <h1><a href="#">Customer Order Entry System</a></h1>
+    <form method="POST">
+        <input class="search-bar" type="search" placeholder="Search Here"> <button type="submit" class="search-button">search</button>
+    </form>
+
     </header>
     <nav>
         <ul class="nav-content">
-            <li><a href="#">Home</a></li>
+            <li><a href="index.php">Home</a></li>
             <li><a href="shoe.php">Shoe</a></li>
             <li><a href="#">T-Shirt</a></li>
             <li><a href="#">Trausers</a></li>
@@ -22,9 +26,11 @@
         </ul>
         </nav>
         <main>
-            <h2>welcome we are offfering promotion today</h2>
+            <h2>welcome its a promotion today</h2>
             <p>we love you all</p>
         </main>
     
+
+        
 </body>
 </html>
