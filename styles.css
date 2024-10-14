@@ -171,16 +171,20 @@ button{
 }
 
 
-/*styling for the shoes*/
+/*styling for the shoes-item, shoe-item2 and shoe-item3*/
 
-.shoe-item{
+.shoe-item,
+.shoe-item1,
+.shoe-item2{
     display: flex;
     flex-direction: row;
 }
 
-.shoe-content {
+.shoe-content,
+.shoe-content1,
+.shoe-content2{
     display: inline-block;
-    width: 60%; /* Adjust as needed */
+    width: 28%; /* Adjust as needed */
     border: 1px solid gray;
     margin: 10px;
     padding: 10px;
@@ -188,17 +192,23 @@ button{
     
 }
 
-.shoe-content img {
-    width: 250px; /* Fit within container */
-    height: 250px; /* Maintain aspect ratio */
+.shoe-content img,
+.shoe-content1 img,
+.shoe-content2 img{
+    width: 200px; /* Fit within container */
+    height: 200px; /* Maintain aspect ratio */
     border-radius: 10px;
     transition: transform 0.3s ease-in-out; /* Smooth transform effect */
 }
 
-.shoe-content h1, p{
+.shoe-content h1, p,
+.shoe-content1 h1, p,
+.shoe-content2 h1, p{
     color: rgb(10, 10, 71);
 }
-.shoe-content img:hover {
+.shoe-content img:hover,
+.shoe-content1 img:hover,
+.shoe-content2 img:hover{
     transform: scale(1.1); /* Zoom effect on hover */
 }
 
@@ -207,12 +217,65 @@ button{
     color: blue;
 }
 
-.shoe-item2{
+
+
+
+
+
+/*The beginning of the shirt-item, shirt-item2 and shirt-item3*/
+
+.shirt-item,
+.shirt-item1,
+.shirt-item2{
     display: flex;
     flex-direction: row;
 }
 
-.shoe-content1{
+.shirt-content,
+.shirt-content1,
+.shirt-content2{
+    display: inline-block;
+    width: 30%; /* Adjust as needed */
+    border: 1px solid gray;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    
+}
+
+.shirt-content img,
+.shirt-content1 img,
+.shirt-content2 img{
+    width: 200px; /* Fit within container */
+    height: 200px; /* Maintain aspect ratio */
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out; /* Smooth transform effect */
+}
+
+.shirt-content h1, p,
+.shirt-content1 h1, p,
+.shirt-content2 h1 p{
+    color: rgb(10, 10, 71);
+}
+.shirt-content img:hover,
+.shirt-content1 img:hover,
+.shirt-content2 img:hover{
+    transform: scale(1.1); /* Zoom effect on hover */
+}
+
+
+/*The beginning of the trauser-item, trauser-item2 and trauser-item3*/
+
+.trauser-item,
+.trauser-item1,
+.trauser-item2{
+    display: flex;
+    flex-direction: row;
+}
+
+.trauser-content,
+.trauser-content1,
+.trauser-content2{
     display: inline-block;
     width: 60%; /* Adjust as needed */
     border: 1px solid gray;
@@ -222,28 +285,41 @@ button{
     
 }
 
-.shoe-content1 img {
+.trauser-content img,
+.trauser-content1 img,
+.trauser-content2 img{
     width: 250px; /* Fit within container */
     height: 250px; /* Maintain aspect ratio */
     border-radius: 10px;
     transition: transform 0.3s ease-in-out; /* Smooth transform effect */
 }
 
-.shoe-content1 h1, p{
+.trauser-content h1, p,
+.trauser-content1 h1, p,
+.trauser-content2 h1 p{
     color: rgb(10, 10, 71);
 }
-.shoe-content1 img:hover {
+.trauser-content img:hover,
+.trauser-content1 img:hover,
+.trauser-content2 img:hover{
     transform: scale(1.1); /* Zoom effect on hover */
 }
 
-.shoe-item3{
+
+/*The beginning of the sweater-item, sweater-item1 and sweater-item2*/
+
+.sweater-item,
+.sweater-item1,
+.sweater-item2{
     display: flex;
     flex-direction: row;
 }
 
-.shoe-content2{
+.sweater-content,
+.sweater-content1,
+.sweater-content2{
     display: inline-block;
-    width: 60%; /* Adjust as needed */
+    width: 30%; /* Adjust as needed */
     border: 1px solid gray;
     margin: 10px;
     padding: 10px;
@@ -251,19 +327,76 @@ button{
     
 }
 
-.shoe-content2 img {
-    width: 250px; /* Fit within container */
-    height: 250px; /* Maintain aspect ratio */
+.sweater-content img,
+.sweater-content1 img,
+.sweater-content2 img{
+    width: 200px; /* Fit within container */
+    height: 200px; /* Maintain aspect ratio */
     border-radius: 10px;
     transition: transform 0.3s ease-in-out; /* Smooth transform effect */
 }
 
-.shoe-content2 h1, p{
+.sweater-content h1, p,
+.trauser-content1 h1, p,
+.trauser-content2 h1 p{
     color: rgb(10, 10, 71);
 }
-.shoe-content2 img:hover {
+.sweater-content img:hover,
+.sweater-content1 img:hover,
+.sweater-content2 img:hover{
     transform: scale(1.1); /* Zoom effect on hover */
 }
+
+
+/*The beginning of the sweater-item, sweater-item1 and sweater-item2*/
+
+.coat-item,
+.coat-item1,
+.coat-item2{
+    display: flex;
+    flex-direction: row;
+}
+
+.coat-content,
+.coat-content1,
+.coat-content2{
+    display: inline-block;
+    width: 30%; /* Adjust as needed */
+    border: 1px solid gray;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    
+}
+
+.coat-content img,
+.coat-content1 img,
+.coat-content2 img{
+    width: 200px; /* Fit within container */
+    height: 200px; /* Maintain aspect ratio */
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out; /* Smooth transform effect */
+}
+
+.coat-content h1, p,
+.coat-content1 h1, p,
+.coat-content2 h1 p{
+    color: rgb(10, 10, 71);
+}
+.coat-content img:hover,
+.coat-content1 img:hover,
+.coat-content2 img:hover{
+    transform: scale(1.1); /* Zoom effect on hover */
+}
+
+
+
+
+
+
+
+
+
 
 
 

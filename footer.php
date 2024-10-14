@@ -52,5 +52,14 @@
              </ul>
              </div>
     </footer>
+
+    <footer class="footer2">
+        <img src="images/picha.png" alt="">
+        <img src="images/picha1.png" alt="">
+        <img src="images/picha2.png" alt="">
+        <img src="images/picha3.png" alt="">
+        <img src="images/picha4.png" alt="">
+    
+  </footer>
 </body>
 </html>

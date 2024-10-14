@@ -19,10 +19,10 @@
         <ul class="nav-content">
             <li><a href="index.php">Home</a></li>
             <li><a href="shoe.php">Shoe</a></li>
-            <li><a href="#">T-Shirt</a></li>
-            <li><a href="#">Trausers</a></li>
-            <li><a href="#">Sweater</a></li>
-            <li><a href="#">coats</a></li>
+            <li><a href="shirt.php">T-Shirt</a></li>
+            <li><a href="trauser.php">Trausers</a></li>
+            <li><a href="sweater.php">Sweater</a></li>
+            <li><a href="coats.php">coats</a></li>
         </ul>
         </nav>
         <main>
