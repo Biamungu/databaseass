@@ -25,11 +25,6 @@
             <li><a href="coats.php">coats</a></li>
         </ul>
         </nav>
-        <main>
-            <h2>welcome its a promotion today</h2>
-            <p>we love you all</p>
-        </main>
-    
 
         
 </body>

@@ -32,18 +32,18 @@
 
             <div class="footer1">
             <ul>
-                <h3>Source on .com</h3>
+                <h3>Source on customer .com</h3>
                 <li><a href="#">Request for Quotation</a></li>
                 <li><a href="#">Membership program</a></li>
                 <li><a href="#">Alibaba.com Logistics</a></li>
                 <li><a href="#">Sales tax and VAT</a></li>
-                <li><a href="#">Alibaba.com Reads</a></li>
+                <li><a href="#">customer.com Reads</a></li>
              </ul>
             </div>    
               
            <div class="footer1">
              <ul>
-                <h3>Sell on Alibaba.com</h3>
+                <h3>Sell on customer.com</h3>
                 <li><a href="#">Start selling</a></li>
                 <li><a href="#">Seller Central</a></li>
                 <li><a href="#">Become a Verified Supplier</a></li>

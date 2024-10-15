@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> trauser.php</title>
+    <title> trauser page</title>
 </head>
 <body>
     <?php
@@ -15,24 +15,32 @@
      <div class="trauser-content">
           <h1>Make an order</h1>
           <img src="images/trauser1.jpg" alt="trauser1">
+          <p>2024 Made In Zambia Nestory Supplies Wholesale Cheap Hot Sale</p>
+            <h1>k200.00</h1>
           <button>buy now</button>
       </div>
   
       <div class="trauser-content">
           <h1>Make an order</h1>
           <img src="images/trauser2.jpg" alt="trauser2">
+          <p>2024 Made In Zambia Nestory Supplies Wholesale Cheap Hot Sale</p>
+            <h1>k200.00</h1>
           <button>buy now</button>
       </div>
       
       <div class="trauser-content">
           <h1>Make an order</h1>
           <img src="images/trauser3.jpg" alt="trauser3">
+          <p>2024 Made In Zambia Nestory Supplies Wholesale Cheap Hot Sale</p>
+            <h1>k200.00</h1>
           <button>buy now</button>
       </div>
   
       <div class="trauser-content">
           <h1>Make an order</h1>
           <img src="images/trauser4.jpg" alt="trauser4">
+          <p>2024 Made In Zambia Nestory Supplies Wholesale Cheap Hot Sale</p>
+            <h1>k200.00</h1>
           <button>buy now</button>
       </div>
 </div>
@@ -42,24 +50,32 @@
       <div class="trauser-content1">
           <h1>Make an order</h1>
           <img src="images/trauser5.jpg" alt="trauser5">
+          <p>2024 Made In Zambia Nestory Supplies Wholesale Cheap Hot Sale</p>
+            <h1>k200.00</h1>
           <button>buy now</button>
       </div>
 
       <div class="trauser-content1">
           <h1>Make an order</h1>
           <img src="images/trauser6.jpg" alt="trauser6">
+          <p>2024 Made In Zambia Nestory Supplies Wholesale Cheap Hot Sale</p>
+            <h1>k200.00</h1>
           <button>buy now</button>
       </div>
 
       <div class="trauser-content1">
           <h1>Make an order</h1>
           <img src="images/trauser7.jpg" alt="trauser7">
+          <p>2024 Made In Zambia Nestory Supplies Wholesale Cheap Hot Sale</p>
+            <h1>k200.00</h1>
           <button>buy now</button>
       </div>
 
       <div class="trauser-content1">
           <h1>Make an order</h1>
           <img src="images/trauser8.jpg" alt="trauser8">
+          <p>2024 Made In Zambia Nestory Supplies Wholesale Cheap Hot Sale</p>
+            <h1>k200.00</h1>
           <button>buy now</button>
       </div>
 </div>
@@ -68,24 +84,32 @@
       <div class="trauser-content2">
           <h1>Make an order</h1>
           <img src="images/trauser9.jpg" alt="trauser9">
+          <p>2024 Made In Zambia Nestory Supplies Wholesale Cheap Hot Sale</p>
+            <h1>k200.00</h1>
           <button>buy now</button>
       </div>
 
       <div class="trauser-content2">
           <h1>Make an order</h1>
           <img src="images/trauser10.jpg" alt="trauser10">
+          <p>2024 Made In Zambia Nestory Supplies Wholesale Cheap Hot Sale</p>
+            <h1>k200.00</h1>
           <button>buy now</button>
       </div>
 
       <div class="trauser-content2">
           <h1>Make an order</h1>
           <img src="images/trauser11.webp" alt="trauser11">
+          <p>2024 Made In Zambia Nestory Supplies Wholesale Cheap Hot Sale</p>
+            <h1>k200.00</h1>
           <button>buy now</button>
       </div>
 
       <div class="trauser-content2">
           <h1>Make an order</h1>
           <img src="images/trauser12.jpeg" alt="trausser11">
+          <p>2024 Made In Zambia Nestory Supplies Wholesale Cheap Hot Sale</p>
+            <h1>k200.00</h1>
           <button>buy now</button>
       </div>
 

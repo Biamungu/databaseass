@@ -87,37 +87,6 @@ nav{
     color: rgb(10, 10, 71);
 }
 
-/*Animation styling */
-main {
-    padding: 20px;
-    text-align: center;
-    overflow: hidden; /* Prevents content from showing outside the main container */
-}
-
-/* Continuous animation for h2 and p */
-main h2, main p {
-    font-size: 30px;
-    position: relative;
-    animation: slideRightLeft 10s linear infinite; /* Infinite loop with a continuous motion */
-}
-
-/* Keyframes for continuous right-left sliding animation */
-@keyframes slideRightLeft {
-    0% {
-        transform: translateX(100%); /* Start off the screen to the right */
-    }
-    50% {
-        transform: translateX(0); /* Move to the original position */
-    }
-    100% {
-        transform: translateX(-100%); /* Move off the screen to the left */
-    }
-}
-
-
-
-
-
 .contents{
     display: flex;
     flex-direction: row;
@@ -184,12 +153,33 @@ button{
 .shoe-content1,
 .shoe-content2{
     display: inline-block;
-    width: 28%; /* Adjust as needed */
+    width: 30%; /* Adjust as needed */
     border: 1px solid gray;
+    height: 430px;
     margin: 10px;
     padding: 10px;
     border-radius: 5px;
     
+}
+
+.shoe-content h1,.shoe-content p{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+
+}
+
+.shoe-content1 h1,.shoe-content1 p{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+
+}
+
+.shoe-content2 h1,.shoe-content2 p{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
 }
 
 .shoe-content img,
@@ -213,8 +203,8 @@ button{
 }
 
 button{
-    font-size: 20px;
-    color: blue;
+    font-size: 30px;
+    color: rgb(6, 6, 138);
 }
 
 
@@ -237,10 +227,32 @@ button{
     display: inline-block;
     width: 30%; /* Adjust as needed */
     border: 1px solid gray;
+    height: 430px;
     margin: 10px;
     padding: 10px;
     border-radius: 5px;
     
+}
+
+
+.shirt-content h1,.shirt-content p{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+
+}
+
+.shirt-content1 h1,.shirt-content1 p{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+
+}
+
+.shirt-content2 h1,.shirt-content2 p{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
 }
 
 .shirt-content img,
@@ -254,7 +266,7 @@ button{
 
 .shirt-content h1, p,
 .shirt-content1 h1, p,
-.shirt-content2 h1 p{
+.shirt-content2 h1, p{
     color: rgb(10, 10, 71);
 }
 .shirt-content img:hover,
@@ -277,13 +289,35 @@ button{
 .trauser-content1,
 .trauser-content2{
     display: inline-block;
-    width: 60%; /* Adjust as needed */
+    width: 30%; /* Adjust as needed */
     border: 1px solid gray;
+    height: 500px;
     margin: 10px;
     padding: 10px;
     border-radius: 5px;
     
 }
+
+.trauser-content h1,.trauser-content p{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+
+}
+
+.trauser-content1 h1,.trauser-content1 p{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+
+}
+
+.trauser-content2 h1,.trauser-content2 p{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
 
 .trauser-content img,
 .trauser-content1 img,
@@ -321,11 +355,33 @@ button{
     display: inline-block;
     width: 30%; /* Adjust as needed */
     border: 1px solid gray;
+    height: 450px;
     margin: 10px;
     padding: 10px;
     border-radius: 5px;
     
 }
+
+.sweater-content h1,.sweater-content p{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+
+}
+
+.sweater-content1 h1,.sweater-content1 p{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+
+}
+
+.sweater-content2 h1,.sweater-content2 p{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
 
 .sweater-content img,
 .sweater-content1 img,
@@ -390,11 +446,60 @@ button{
 }
 
 
+/*the beginning of the tyling of the login page */
 
+.container {
+    margin: auto;
+    text-align: center;
+    background-color: #fff;
+    width: 500px;
+    height: 400px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
 
+h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
 
+.input-group,
+.user-email,
+.user-password {
+    margin-bottom: 10px;
+}
 
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
 
+input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.submit-button {
+    margin-top: 10px;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    background-color:blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: blue;;
+}
 
 
 
