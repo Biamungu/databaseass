@@ -23,6 +23,8 @@
             <li><a href="trauser.php">Trausers</a></li>
             <li><a href="sweater.php">Sweater</a></li>
             <li><a href="coats.php">coats</a></li>
+            <li><a href="login.php">Sign Up</a></li>
+            <li><a href="form_shoe.php">form</a></li>
         </ul>
         </nav>
 

@@ -9,38 +9,37 @@
     <?php
       require"header.php";
     ?>
-    <main>
-       
+
+<main>
     <div class="contents">
   
     <div class="main-content">
-        <h1>Make an order</h1>
+        <h1>Click here</h1>
         <a href="shoe.php"><img src="images/shoe.jpg" alt="Shoe"></a>
     </div>
 
     <div class="main-content">
-        <h1>Make an order</h1>
+        <h1>Click here</h1>
         <a href="trauser.php"><img src="images/trausers.avif" alt="Trausers"></a>
        
     </div>
     
     <div class="main-content">
-        <h1>Make an order</h1>
+        <h1>Click here</h1>
         <a href="sweater.php"><img src="images/sweater.avif" alt="Sweater"></a>
     </div>
 
     <div class="main-content">
-        <h1>Make an order</h1>
+        <h1>Click here</h1>
         <a href="shirt.php"><img src="images/t-shirts.avif" alt="t-shirt"></a>
     </div>
       
     <div class="main-content">
-        <h1>Make an order</h1>
+        <h1>Click here</h1>
        <a href="coats.php"> <img src="images/coats.avif" alt="coats"></a>
     </div>
 
     </div>
-     
 </main>
 
 <!-- Include the footer -->
