@@ -140,21 +140,65 @@ button{
 }
 
 
+
+
+/*the beginning of the upload_form*/
+/* Center the form container using flexbox */
+.upload_images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height of the viewport */
+    background-color: #f0f0f0; /* Optional: To make centering visible */
+}
+
+/* Styling the form */
+.image-upload-form {
+    width: 500px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Styling form elements */
+.image-upload-form label,
+.image-upload-form input,
+.image-upload-form select,
+.image-upload-form textarea,
+.image-upload-form button {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.image-upload-form button {
+    background-color: #131d55;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.image-upload-form button:hover {
+    background-color: #45a049;
+}
+
+
 /*styling for the shoes-item, shoe-item2 and shoe-item3*/
 
-.shoe-item,
-.shoe-item1,
-.shoe-item2{
+.shoe-item{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
-.shoe-content,
-.shoe-content1,
-.shoe-content2{
+.shoe-content{
     display: inline-block;
-    width:23.5%; /* Adjust as needed */
+    width:23%; /* Adjust as needed */
     border: 1px solid gray;
     height: 430px;
     margin: 10px;
@@ -183,23 +227,17 @@ button{
     font-size: 20px;
 }
 
-.shoe-content img,
-.shoe-content1 img,
-.shoe-content2 img{
+.shoe-content img{
     width: 200px; /* Fit within container */
     height: 200px; /* Maintain aspect ratio */
     border-radius: 10px;
     transition: transform 0.3s ease-in-out; /* Smooth transform effect */
 }
 
-.shoe-content h1, p,
-.shoe-content1 h1, p,
-.shoe-content2 h1, p{
+.shoe-content h1, p{
     color: rgb(10, 10, 71);
 }
-.shoe-content img:hover,
-.shoe-content1 img:hover,
-.shoe-content2 img:hover{
+.shoe-content img:hover{
     transform: scale(1.1); /* Zoom effect on hover */
 }
 
@@ -215,18 +253,15 @@ button{
 
 /*The beginning of the shirt-item, shirt-item2 and shirt-item3*/
 
-.shirt-item,
-.shirt-item1,
-.shirt-item2{
+.shirt-item{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
-.shirt-content,
-.shirt-content1,
-.shirt-content2{
+.shirt-content{
     display: inline-block;
-    width: 30%; /* Adjust as needed */
+    width: 23%; /* Adjust as needed */
     border: 1px solid gray;
     height: 430px;
     margin: 10px;
@@ -256,43 +291,34 @@ button{
     font-size: 20px;
 }
 
-.shirt-content img,
-.shirt-content1 img,
-.shirt-content2 img{
+.shirt-content img{
     width: 200px; /* Fit within container */
     height: 200px; /* Maintain aspect ratio */
     border-radius: 10px;
     transition: transform 0.3s ease-in-out; /* Smooth transform effect */
 }
 
-.shirt-content h1, p,
-.shirt-content1 h1, p,
-.shirt-content2 h1, p{
+.shirt-content h1, p{
     color: rgb(10, 10, 71);
 }
-.shirt-content img:hover,
-.shirt-content1 img:hover,
-.shirt-content2 img:hover{
+.shirt-content img:hover{
     transform: scale(1.1); /* Zoom effect on hover */
 }
 
 
 /*The beginning of the trauser-item, trauser-item2 and trauser-item3*/
 
-.trauser-item,
-.trauser-item1,
-.trauser-item2{
+.trauser-item{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
-.trauser-content,
-.trauser-content1,
-.trauser-content2{
+.trauser-content{
     display: inline-block;
-    width: 30%; /* Adjust as needed */
+    width: 23%; /* Adjust as needed */
     border: 1px solid gray;
-    height: 500px;
+    height: 430px;
     margin: 10px;
     padding: 10px;
     border-radius: 5px;
@@ -320,43 +346,34 @@ button{
 }
 
 
-.trauser-content img,
-.trauser-content1 img,
-.trauser-content2 img{
+.trauser-content img{
     width: 250px; /* Fit within container */
     height: 250px; /* Maintain aspect ratio */
     border-radius: 10px;
     transition: transform 0.3s ease-in-out; /* Smooth transform effect */
 }
 
-.trauser-content h1, p,
-.trauser-content1 h1, p,
-.trauser-content2 h1 p{
+.trauser-content h1, p{
     color: rgb(10, 10, 71);
 }
-.trauser-content img:hover,
-.trauser-content1 img:hover,
-.trauser-content2 img:hover{
+.trauser-content img:hover{
     transform: scale(1.1); /* Zoom effect on hover */
 }
 
 
 /*The beginning of the sweater-item, sweater-item1 and sweater-item2*/
 
-.sweater-item,
-.sweater-item1,
-.sweater-item2{
+.sweater-item{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
-.sweater-content,
-.sweater-content1,
-.sweater-content2{
+.sweater-content{
     display: inline-block;
-    width: 30%; /* Adjust as needed */
+    width: 23%; /* Adjust as needed */
     border: 1px solid gray;
-    height: 450px;
+    height: 430px;
     margin: 10px;
     padding: 10px;
     border-radius: 5px;
@@ -384,41 +401,32 @@ button{
 }
 
 
-.sweater-content img,
-.sweater-content1 img,
-.sweater-content2 img{
+.sweater-content img{
     width: 200px; /* Fit within container */
     height: 200px; /* Maintain aspect ratio */
     border-radius: 10px;
     transition: transform 0.3s ease-in-out; /* Smooth transform effect */
 }
 
-.sweater-content h1, p,
-.trauser-content1 h1, p,
-.trauser-content2 h1 p{
+.sweater-content h1, p{
     color: rgb(10, 10, 71);
 }
-.sweater-content img:hover,
-.sweater-content1 img:hover,
-.sweater-content2 img:hover{
+.sweater-content img:hover{
     transform: scale(1.1); /* Zoom effect on hover */
 }
 
 
 /*The beginning of the sweater-item, sweater-item1 and sweater-item2*/
 
-.coat-item,
-.coat-item1,
-.coat-item2{
+.coat-item{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
-.coat-content,
-.coat-content1,
-.coat-content2{
+.coat-content{
     display: inline-block;
-    width: 30%; /* Adjust as needed */
+    width: 23%; /* Adjust as needed */
     border: 1px solid gray;
     height: 430px;
     margin: 10px;
@@ -448,23 +456,17 @@ button{
 }
 
 
-.coat-content img,
-.coat-content1 img,
-.coat-content2 img{
+.coat-content img{
     width: 200px; /* Fit within container */
     height: 200px; /* Maintain aspect ratio */
     border-radius: 10px;
     transition: transform 0.3s ease-in-out; /* Smooth transform effect */
 }
 
-.coat-content h1, p,
-.coat-content1 h1, p,
-.coat-content2 h1 p{
+.coat-content h1, p{
     color: rgb(10, 10, 71);
 }
-.coat-content img:hover,
-.coat-content1 img:hover,
-.coat-content2 img:hover{
+.coat-content img:hover{
     transform: scale(1.1); /* Zoom effect on hover */
 }
 

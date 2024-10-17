@@ -1,124 +1,65 @@
+<?php
+// Include database configuration
+include 'config.php';
+
+// Fetch product details from the database
+$sql = "SELECT description, image, price, name FROM products where category = 'trousers'"; // Fixed SQL query
+$result = mysqli_query($conn, $sql);
+
+// Check for any database connection or query errors
+if (!$result) {
+    die("Error fetching products: " . mysqli_error($conn));
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> trauser page</title>
+    <title>Shirt Page</title>
 </head>
 <body>
-    <?php
-    require "header.php";
-    ?>
-  <main>
-  <div class="trauser-item">
-     
-     <div class="trauser-content">
-          <h1>Make an order</h1>
-          <img src="images/trauser1.jpg" alt="trauser1">
-          <p>2024 Made In Zambia Nestory Supplies Wholesale Cheap Hot Sale</p>
-            <h1>k200.00</h1>
-          <button>buy now</button>
-      </div>
-  
-      <div class="trauser-content">
-          <h1>Make an order</h1>
-          <img src="images/trauser2.jpg" alt="trauser2">
-          <p>2024 Made In Zambia Nestory Supplies Wholesale Cheap Hot Sale</p>
-            <h1>k200.00</h1>
-          <button>buy now</button>
-      </div>
-      
-      <div class="trauser-content">
-          <h1>Make an order</h1>
-          <img src="images/trauser3.jpg" alt="trauser3">
-          <p>2024 Made In Zambia Nestory Supplies Wholesale Cheap Hot Sale</p>
-            <h1>k200.00</h1>
-          <button>buy now</button>
-      </div>
-  
-      <div class="trauser-content">
-          <h1>Make an order</h1>
-          <img src="images/trauser4.jpg" alt="trauser4">
-          <p>2024 Made In Zambia Nestory Supplies Wholesale Cheap Hot Sale</p>
-            <h1>k200.00</h1>
-          <button>buy now</button>
-      </div>
-</div>
 
-<div class="trauser-item1">
-        
-      <div class="trauser-content1">
-          <h1>Make an order</h1>
-          <img src="images/trauser5.jpg" alt="trauser5">
-          <p>2024 Made In Zambia Nestory Supplies Wholesale Cheap Hot Sale</p>
-            <h1>k200.00</h1>
-          <button>buy now</button>
-      </div>
+<!-- Header section -->
+<?php require 'header.php'; ?>
 
-      <div class="trauser-content1">
-          <h1>Make an order</h1>
-          <img src="images/trauser6.jpg" alt="trauser6">
-          <p>2024 Made In Zambia Nestory Supplies Wholesale Cheap Hot Sale</p>
-            <h1>k200.00</h1>
-          <button>buy now</button>
-      </div>
-
-      <div class="trauser-content1">
-          <h1>Make an order</h1>
-          <img src="images/trauser7.jpg" alt="trauser7">
-          <p>2024 Made In Zambia Nestory Supplies Wholesale Cheap Hot Sale</p>
-            <h1>k200.00</h1>
-          <button>buy now</button>
-      </div>
-
-      <div class="trauser-content1">
-          <h1>Make an order</h1>
-          <img src="images/trauser8.jpg" alt="trauser8">
-          <p>2024 Made In Zambia Nestory Supplies Wholesale Cheap Hot Sale</p>
-            <h1>k200.00</h1>
-          <button>buy now</button>
-      </div>
-</div>
-
-<div class="trauser-item2">
-      <div class="trauser-content2">
-          <h1>Make an order</h1>
-          <img src="images/trauser9.jpg" alt="trauser9">
-          <p>2024 Made In Zambia Nestory Supplies Wholesale Cheap Hot Sale</p>
-            <h1>k200.00</h1>
-          <button>buy now</button>
-      </div>
-
-      <div class="trauser-content2">
-          <h1>Make an order</h1>
-          <img src="images/trauser10.jpg" alt="trauser10">
-          <p>2024 Made In Zambia Nestory Supplies Wholesale Cheap Hot Sale</p>
-            <h1>k200.00</h1>
-          <button>buy now</button>
-      </div>
-
-      <div class="trauser-content2">
-          <h1>Make an order</h1>
-          <img src="images/trauser11.webp" alt="trauser11">
-          <p>2024 Made In Zambia Nestory Supplies Wholesale Cheap Hot Sale</p>
-            <h1>k200.00</h1>
-          <button>buy now</button>
-      </div>
-
-      <div class="trauser-content2">
-          <h1>Make an order</h1>
-          <img src="images/trauser12.jpeg" alt="trausser11">
-          <p>2024 Made In Zambia Nestory Supplies Wholesale Cheap Hot Sale</p>
-            <h1>k200.00</h1>
-          <button>buy now</button>
-      </div>
-
-</div>
-  </main>
+<main>
+    <div class="trauser-item"> <!-- Fixed 'di' to 'div' -->
+        <?php
+        // Check if any products are returned
+        if (mysqli_num_rows($result) > 0) {
+            // Loop through each product and display it
+            while ($row = mysqli_fetch_assoc($result)) {
+                ?>
+                    <div class="trauser-content">
+                        <!-- Dynamically display product details -->
+                        <h1><?php echo htmlspecialchars($row['name']); ?></h1>
+                        <img src="<?php echo htmlspecialchars($row['image']); ?>" alt="Shirt Image"> <!-- Fixed image src -->
+                        <p><?php echo htmlspecialchars($row['description']); ?></p>
+                        <h1>K<?php echo htmlspecialchars($row['price']); ?></h1>
+                        <button>Buy Now</button>
+                    </div>
+                <?php
+            }
+        } else {
+            // If no products found
+            echo '<p>No products found.</p>';
+        }
+        ?>
+    </div>
 
 
 
- <!-- Include the footer -->
+</main>
+
+<!-- Footer section -->
 <?php include 'footer.php'; ?>
+
 </body>
 </html>
+
+<?php
+// Close the database connection
+mysqli_close($conn);
+?>

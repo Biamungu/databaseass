@@ -13,15 +13,15 @@
     <form action="login_process.php" method="POST">
         <div class="input-group">
             <label for="username">Username</label>
-            <input type="text" name="username" id="username" required>
+            <input type="text" name="username" id="username" required autocomplete="off">
         </div>
         <div class="user-email">
             <label for="email">Email</label>
-            <input type="email" name="email" id="email" required>
+            <input type="email" name="email" id="email" required autocomplete="off">
         </div>
         <div class="user-password">
             <label for="password">Password</label>
-            <input type="password" name="password" id="password" required>
+            <input type="password" name="password" id="password" required autocomplete="off">
         </div>
         <div class="submit-button">
             <button type="submit" name="create_account" class="btn">Create Account</button>
