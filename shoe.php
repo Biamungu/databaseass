@@ -3,7 +3,7 @@
 include 'config.php';
 
 // Fetch product details from the database
-$sql = "SELECT description, image, price, name FROM products where category = 'shoes'"; // Fixed SQL query
+$sql = "SELECT id, description, image, price, name FROM products WHERE category = 'shoes'";
 $result = mysqli_query($conn, $sql);
 
 // Check for any database connection or query errors
@@ -18,6 +18,7 @@ if (!$result) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shoe Page</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
 </head>
 <body>
 
@@ -25,32 +26,31 @@ if (!$result) {
 <?php require 'header.php'; ?>
 
 <main>
-    <div class="shoe-item"> <!-- Fixed 'di' to 'div' -->
+    <div class="shoe-item">
         <?php
-        // Check if any products are returned
         if (mysqli_num_rows($result) > 0) {
-            // Loop through each product and display it
             while ($row = mysqli_fetch_assoc($result)) {
                 ?>
-                    <div class="shoe-content">
-                        <!-- Dynamically display product details -->
-                        <h1><?php echo htmlspecialchars($row['name']); ?></h1>
-                        <img src="<?php echo htmlspecialchars($row['image']); ?>" alt="Shoe Image"> <!-- Fixed image src -->
-                        <p><?php echo htmlspecialchars($row['description']); ?></p>
-                        <h1>K<?php echo htmlspecialchars($row['price']); ?></h1>
-                        <button>Buy Now</button>
-                    </div>
+                <div class="shoe-content">
+                    <h1><?php echo htmlspecialchars($row['name']); ?></h1>
+                    <img src="<?php echo htmlspecialchars($row['image']); ?>" alt="Shoe Image">
+                    <p><?php echo htmlspecialchars($row['description']); ?></p>
+                    <h1>K<?php echo htmlspecialchars($row['price']); ?></h1>
+
+                    <form method="POST" action="checkout.php">
+                        <input type="hidden" name="product_id" value="<?php echo htmlspecialchars($row['id']); ?>">
+                        <input type="hidden" name="product_name" value="<?php echo htmlspecialchars($row['name']); ?>">
+                        <input type="hidden" name="product_price" value="<?php echo htmlspecialchars($row['price']); ?>">
+                        <button type="submit">Buy Now</button>
+                    </form>
+                </div>
                 <?php
             }
         } else {
-            // If no products found
             echo '<p>No products found.</p>';
         }
         ?>
     </div>
-
-
-
 </main>
 
 <!-- Footer section -->

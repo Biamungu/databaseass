@@ -15,28 +15,28 @@
   
     <div class="main-content">
         <h1>Click here</h1>
-        <a href="shoe.php"><img src="images/shoe.jpg" alt="Shoe"></a>
+        <a href="shoe.php"><img src="Asset/shoes/shoes.jpeg" alt="Shoe"></a>
     </div>
 
     <div class="main-content">
         <h1>Click here</h1>
-        <a href="trauser.php"><img src="images/trausers.avif" alt="Trausers"></a>
+        <a href="trauser.php"><img src="Asset/trausers/trousers.jpeg" alt="Trausers"></a>
        
     </div>
     
     <div class="main-content">
         <h1>Click here</h1>
-        <a href="sweater.php"><img src="images/sweater.avif" alt="Sweater"></a>
+        <a href="sweater.php"><img src="Asset/sweaters/sweaters.jpeg" alt="Sweater"></a>
     </div>
 
     <div class="main-content">
         <h1>Click here</h1>
-        <a href="shirt.php"><img src="images/t-shirts.avif" alt="t-shirt"></a>
+        <a href="shirt.php"><img src="Asset/shirts/shirts.jpeg" alt="t-shirt"></a>
     </div>
       
     <div class="main-content">
         <h1>Click here</h1>
-       <a href="coats.php"> <img src="images/coats.avif" alt="coats"></a>
+       <a href="coats.php"> <img src="Asset/coats/coats.jpeg" alt="coats"></a>
     </div>
 
     </div>
@@ -47,3 +47,4 @@
   
 </body>
 </html>
+

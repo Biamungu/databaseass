@@ -54,6 +54,7 @@
     </footer>
 
     <footer class="footer2">
+    <p>&copy; <?php echo date("Y"); ?> Your Company. All rights reserved.</p>
         <img src="images/picha.png" alt="">
         <img src="images/picha1.png" alt="">
         <img src="images/picha2.png" alt="">

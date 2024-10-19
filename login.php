@@ -1,33 +1,51 @@
+<?php
+session_start();
+
+// Replace this with your real database connection
+$users = [
+    'admin' => ['password' => 'admin123', 'role' => 'admin'],
+    'client' => ['password' => 'client123', 'role' => 'client'],
+];
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+
+    // Check if the username exists and password matches
+    if (isset($users[$username]) && $users[$username]['password'] === $password) {
+        $_SESSION['username'] = $username;
+        $_SESSION['role'] = $users[$username]['role'];
+        header('Location: index.php');
+        exit;
+    } else {
+        $error = "Invalid username or password!";
+    }
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Create Account</title>
+    <title>Login</title>
 </head>
 <body>
-        
-<div class="container">
-    <h2>Create account</h2>
-    <form action="login_process.php" method="POST">
-        <div class="input-group">
-            <label for="username">Username</label>
-            <input type="text" name="username" id="username" required autocomplete="off">
-        </div>
-        <div class="user-email">
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" required autocomplete="off">
-        </div>
-        <div class="user-password">
-            <label for="password">Password</label>
-            <input type="password" name="password" id="password" required autocomplete="off">
-        </div>
-        <div class="submit-button">
-            <button type="submit" name="create_account" class="btn">Create Account</button>
-        </div>
-    </form>
-</div>
+    <?php require "header.php"; ?>
 
+    <h2>Login</h2>
+    <?php if (isset($error)): ?>
+        <p style="color: red;"><?= htmlspecialchars($error); ?></p>
+    <?php endif; ?>
+    
+    <form action="login.php" method="POST">
+        <label for="username">Username:</label>
+        <input type="text" name="username" required><br>
+        <label for="password">Password:</label>
+        <input type="password" name="password" required><br>
+        <button type="submit">Login</button>
+    </form>
+
+    <?php include 'footer.php'; ?>
 </body>
 </html>
