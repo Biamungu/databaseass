@@ -181,6 +181,59 @@ button{
 
 
 
+/*The beginning of the admin log in page*/
+ .cont{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    padding-bottom: 60px;
+ }
+
+ .cont .conten{
+    text-align: center;
+ }
+
+ .cont .conten h3{
+    font-size: 30px;
+    color: #333;
+ }
+
+ .cont .conten h3 span{
+    background: crimson;
+    color: #fff;
+    border-radius: 5px;
+    padding: 0 15px;
+
+ }
+
+ .cont .conten h1{
+    font-size: 50px;
+    color: #333;
+ }
+
+.cont .conten h1 span{
+    background: crimson;
+
+ }
+
+ .cont .conten p{
+    font-size: 25px;
+    margin-bottom: 20px;
+ }
+
+ .cont .conten h1 span{
+    background: crimson;
+
+ }
+
+ .cont .conten .btn{
+    font-size: 25px;
+    margin-bottom: 20px;
+ }
+
+
 
 /*the beginning of the upload_form*/
 /* Center the form container using flexbox */
@@ -225,6 +278,53 @@ button{
 
 .image-upload-form button:hover {
     background-color: #45a049;
+}
+
+
+
+
+
+/*the styling for up of the sign up process*/
+
+.center-container {
+    margin-top: 30px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 300px; 
+}
+
+/* Existing signup styles */
+.sign_up {
+    margin: auto; 
+    border: 1px solid #ccc; 
+    padding: 20px; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+    width: 50%;
+    max-width: 400px; 
+}
+
+/* Adjust input and submit button widths */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+    width: 100%; 
+    padding: 10px;
+    margin: 5px 0; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+}
+
+input[type="submit"] {
+    background-color: #4CAF50; 
+    color: white; 
+    border: none; 
+    border-radius: 4px; 
+    padding: 10px; 
+    cursor: pointer; 
+    width: 100%; 
 }
 
 

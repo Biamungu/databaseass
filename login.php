@@ -1,25 +1,8 @@
 <?php
 session_start();
 
-// Replace this with your real database connection
-$users = [
-    'admin' => ['password' => 'admin123', 'role' => 'admin'],
-    'client' => ['password' => 'client123', 'role' => 'client'],
-];
-
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $username = $_POST['username'];
-    $password = $_POST['password'];
-
-    // Check if the username exists and password matches
-    if (isset($users[$username]) && $users[$username]['password'] === $password) {
-        $_SESSION['username'] = $username;
-        $_SESSION['role'] = $users[$username]['role'];
-        header('Location: index.php');
-        exit;
-    } else {
-        $error = "Invalid username or password!";
-    }
+    // You can add the login process here if necessary, but it will be handled in the login_process.php file
 }
 ?>
 
@@ -38,13 +21,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <p style="color: red;"><?= htmlspecialchars($error); ?></p>
     <?php endif; ?>
     
-    <form action="login.php" method="POST">
-        <label for="username">Username:</label>
-        <input type="text" name="username" required><br>
-        <label for="password">Password:</label>
-        <input type="password" name="password" required><br>
-        <button type="submit">Login</button>
-    </form>
+    <form action="login_process.php" method="POST">
+    <label for="login">Username or Email:</label>
+    <input type="text" name="login" required autocomplete="off"><br>
+    <label for="password">Password:</label>
+    <input type="password" name="password" required autocomplete="off"><br>
+    <button type="submit">Login</button>
+</form>
+
 
     <?php include 'footer.php'; ?>
 </body>

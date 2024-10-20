@@ -12,7 +12,6 @@
         <!-- File input for image upload -->
         <label for="image">Select an image:</label>
         <input type="file" name="image" id="image" accept="image/*" required> <br><br>
-
         <!-- Text input for product name -->
         <label for="name">Name</label>
         <input type="text" name="name" id="name" required><br>

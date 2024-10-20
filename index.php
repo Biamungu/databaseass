@@ -37,8 +37,15 @@
     <div class="main-content">
         <h1>Click here</h1>
        <a href="coats.php"> <img src="Asset/coats/coats.jpeg" alt="coats"></a>
+    
     </div>
 
+    </div>
+
+
+
+    <div>
+        
     </div>
 </main>
 
